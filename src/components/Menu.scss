@@ -3,11 +3,11 @@ $detail-color:#FCFDE2;
 
 .dias-semana {
   display: flex;
-  justify-content: center; /* Centraliza os botões */
-  margin-bottom: 20px; /* Espaço abaixo dos botões */
+  justify-content: center; 
+  margin-bottom: 20px;
   max-width: 100vw;
   overflow-x: auto;
-  // overflow: hidden;
+ 
 }
 
 .dias-semana button {
