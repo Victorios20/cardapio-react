@@ -1,4 +1,40 @@
+$background-color: #7D9FC9;
+$datail-color1:#173A57;
+$datail-color2: #1D5E40;
+$text-color: #fff;
 $detail-color:#FCFDE2;
+/* Remove o azul no botão ao ser clicado no celular */
+button {
+  -webkit-tap-highlight-color: transparent; /* Remove o highlight azul ao tocar */
+}
+
+/* Customiza o estado de foco e ativo para os botões */
+button:focus,
+button:active {
+  outline: none; /* Remove a borda de foco padrão */
+  background-color: $datail-color2; /* Cor de fundo desejada ao apertar */
+  color: $text-color; /* Cor do texto desejada ao apertar */
+}
+
+/* Define as cores normais do botão */
+button {
+  background-color: $background-color; /* Cor de fundo normal do botão */
+  border: none; /* Remove borda, se necessário */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:$datail-color1; /* Cor ao passar o mouse */
+  color: $text-color; /* Cor do texto ao passar o mouse */
+}
+
+a:focus,
+a:active {
+  color: $text-color; /* Cor do texto ao apertar */
+}
+
 
 .categorias {
   display: flex;
