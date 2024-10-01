@@ -39,20 +39,23 @@ main > section.items {
 }
 
 section.items .product {
-  padding-top: 12px;
-  border: 1px solid lightgrey;
+  flex: 1 1 calc(33.333% - 36px); // largura
   margin: 12px;
-  flex: 0 0 calc(33.333% - 36px);
-  cursor: pointer;
+  border: 1px solid lightgrey;
   text-align: center;
-  border-radius: 20px 20px 20px 20px ;
+  border-radius: 20px;
   background-color: $detail-color;
+  height: 160px; //altura fixa, alterar.
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  padding-top: 12px;
 }
 
 section.items .product.selected {
-  border: 3px solid $datail-color2;
-
+  height: auto; 
+  align-self: flex-start; 
 }
+
 
 section.items .photo img {
   max-width: 140px;
@@ -128,6 +131,4 @@ section.summary table tbody tr:last-of-type th {
   border-top: 1px solid black;
   padding: 10px 0;
 }
-
-
 

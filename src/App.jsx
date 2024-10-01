@@ -1,7 +1,12 @@
 import './App.scss';
 import OrderDetails from './components/OrderDetails';
 import Item from './components/Item';
+import Menu from './components/Menu';
 import { useState } from 'react';
+
+
+
+
 
 
 
@@ -92,12 +97,12 @@ function App() {
           isInBag: false
         }
       ]);
-      
-      
-      
 
-    const itemsInBag = items.filter(item => item.isInBag)
-
+      
+      
+      
+      
+      
     
 
     function selectHandler(id){
@@ -109,8 +114,13 @@ function App() {
 
     return ( 
         <>
+
+            <div>
+            <Menu />  {/* O componente Menu é usado aqui */}
+            </div>
+        
             <section className="items">
-                <h4>{shopName}</h4>
+                <h4>{shopName}</h4> 
 
 
                 {items.map(item =>

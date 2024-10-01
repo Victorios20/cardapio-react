@@ -1,0 +1,59 @@
+$detail-color:#FCFDE2;
+
+
+.dias-semana {
+  display: flex;
+  justify-content: center; /* Centraliza os botões */
+  margin-bottom: 20px; /* Espaço abaixo dos botões */
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+.dias-semana button {
+  margin: 0 10px; /* Espaçamento entre os botões */
+  padding: 10px 15px; /* Espaçamento interno dos botões */
+  border: none;
+  border-radius: 5px;
+  background-color: $detail-color; /* Cor de fundo dos botões */
+  cursor: pointer; /* Mudança do cursor para pointer */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.dias-semana button.active {
+  background-color: #1D5E40; /* Cor de fundo do botão ativo */
+  color: #fff; /* Cor do texto do botão ativo */
+}
+
+
+.dias-semana button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.menu-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  margin: 10px 0;
+}
+
+.menu-item p {
+  margin: 5px 0;
+}
