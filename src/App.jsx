@@ -102,7 +102,7 @@ function App() {
       
       
       
-      
+
     
 
     function selectHandler(id){
@@ -116,7 +116,7 @@ function App() {
         <>
 
             <div>
-            <Menu />  {/* O componente Menu é usado aqui */}
+            <Menu /> 
             </div>
         
             <section className="items">
