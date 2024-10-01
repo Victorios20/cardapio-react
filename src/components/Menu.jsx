@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import './Menu.scss';
 
-const diasSemana = [
-  { "label": "Segunda", "value": "segunda" },
-  { "label": "Terça", "value": "terça" },
-  { "label": "Quarta", "value": "quarta" },
-  { "label": "Quinta", "value": "quinta" },
-  { "label": "Sexta", "value": "sexta" },
-  { "label": "Sábado", "value": "sábado" },
-  { "label": "Domingo", "value": "domingo" }
-]
+
+const categorias = [
+  { "label": "Entrada", "value": "entrada" },
+  { "label": "Principal", "value": "principal" },
+  { "label": "Sobremesa", "value": "sobremesa" },
+  { "label": "Bebidas", "value": "bebidas" }
+];
 
 
 const Menu = ({setDiaDaSemana, diaDaSemana}) => {
@@ -17,17 +15,18 @@ const Menu = ({setDiaDaSemana, diaDaSemana}) => {
 
   return (
     <div>
-      <div className="dias-semana">
-        {diasSemana.map((dia) => (
+      <div className="categorias">
+        {categorias.map((categoria) => (
           <button
-            key={dia.value}
-            className={diaDaSemana === dia.label ? 'active' : ''}
-            onClick={() => setDiaDaSemana(dia.label)}
+            key={categoria.value}
+            className={diaDaSemana === categoria.label ? 'active' : ''}
+            onClick={() => setDiaDaSemana(categoria.label)}
           >
-            {dia.label}
+            {categoria.label}
           </button>
-        ))}
-      </div>
+  ))}
+</div>
+
     </div>
   );
 };

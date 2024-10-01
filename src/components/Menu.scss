@@ -1,6 +1,6 @@
 $detail-color:#FCFDE2;
 
-.dias-semana {
+.categorias {
   display: flex;
   justify-content: center; 
   margin-bottom: 20px;
@@ -12,11 +12,11 @@ $detail-color:#FCFDE2;
   scrollbar-width: none; /* Remove o scroll do Firefox */
 }
 
-.dias-semana::-webkit-scrollbar {
+.categorias::-webkit-scrollbar {
   display: none; /* Remove o scroll do Chrome/Safari */
 }
 
-.dias-semana button {
+.categorias button {
   margin: 0 10px; /* Espaçamento entre os botões */
   padding: 10px 15px; /* Espaçamento interno dos botões */
   border: none;
@@ -26,13 +26,13 @@ $detail-color:#FCFDE2;
   transition: background-color 0.3s; /* Transição suave */
 }
 
-.dias-semana button.active {
+.categorias button.active {
   background-color: #1D5E40; /* Cor de fundo do botão ativo */
   color: #fff; /* Cor do texto do botão ativo */
 }
 
 
-.dias-semana button:hover {
+.categorias button:hover {
   background-color: #007bff;
   color: white;
 }
