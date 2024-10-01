@@ -39,7 +39,7 @@ main > section.items {
 }
 
 section.items .product {
-  flex: 1 1 calc(33.333% - 36px); // largura
+  width: 40%;
   margin: 12px;
   border: 1px solid lightgrey;
   text-align: center;
@@ -56,6 +56,11 @@ section.items .product.selected {
   align-self: flex-start; 
 }
 
+@media (min-width: 768px) {
+  section.items .product {
+    width: 30%;
+  }
+}
 
 section.items .photo img {
   max-width: 140px;
