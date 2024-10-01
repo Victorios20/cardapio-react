@@ -271,7 +271,7 @@ function App() {
       
       
 
-    const [categoriaSelecionada, setCategoriaSelecionada] = useState('Principal');
+    const [categoriaSelecionada, setCategoriaSelecionada] = useState('Entrada');
     const [items, setItems] = useState(cardapios[categoriaSelecionada]?.items || []);
 
     useEffect(() => {
