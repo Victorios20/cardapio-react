@@ -11,7 +11,8 @@ $detail-color: #FFFFFF;      /* White */
   $text-color: #F5FFFA;       /* Mint Cream */
   $detail-color: #FFD700;     /* Gold */
   .categorias button {
-    background-color:  #FFD700;     ; /* Cor de fundo dos botões */}
+    background-color:  #FFD700;
+  }
     .categorias button.active {background-color:#2F4F4F ;}
     
 }
@@ -36,11 +37,13 @@ $detail-color: #FFFFFF;      /* White */
 }
 
 .categorias button {
-  // background-color: $detail-color; /* Cor de fundo dos botões */
+   background-color: #fff; /* Cor de fundo dos botões */
+  
    margin: 0 3px; /* Espaçamento entre os botões */
   padding: 10px 10px; /* Espaçamento interno dos botões */
   border: none;
   border-radius: 5px;
+  
 
   cursor: pointer; /* Mudança do cursor para pointer */
   transition: background-color 0.3s; /* Transição suave */

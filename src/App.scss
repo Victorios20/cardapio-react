@@ -63,11 +63,11 @@ section.items .product {
   border: 1px solid lightgrey;
   text-align: center;
   border-radius: 20px;
-  
   height: 180px; //altura fixa, alterar.
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 section.items .product.selected {
@@ -180,3 +180,7 @@ section.summary table tbody tr:last-of-type th {
     width: 40%;
   }
 }
+
+
+
+////////////////////////////////////////////MENU////////////////////////////////
