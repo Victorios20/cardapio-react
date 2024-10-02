@@ -1,8 +1,13 @@
-$background-color: #7D9FC9;
-$datail-color1:#173A57;
-$datail-color2: #1D5E40;
-$text-color: #fff;
-$detail-color:#FCFDE2;
+$background-color: #F5F5F5;  /* Light Gray */
+$datail-color1: #333333;     /* Charcoal Black */
+$datail-color2: #A9A9A9;     /* Dark Gray */
+$text-color: #000000;        /* Black */
+$detail-color: #FFFFFF;      /* White */
+
+
+
+
+
 .titulo {
   display: flex;
   justify-content: center;
@@ -12,9 +17,10 @@ $detail-color:#FCFDE2;
 }
 
 .titulo h1 {
+  color: $text-color;
   text-align: center;
   font-size: 32px; 
-  color: $text-color; 
+ 
 }
 
 body {
@@ -51,12 +57,13 @@ main > section.items {
 }
 
 section.items .product {
+  background-color: $detail-color;
   width: 40%;
   margin: 12px;
   border: 1px solid lightgrey;
   text-align: center;
   border-radius: 20px;
-  background-color: $detail-color;
+  
   height: 180px; //altura fixa, alterar.
   overflow: hidden;
   transition: height 0.3s ease-in-out;
@@ -68,14 +75,9 @@ section.items .product.selected {
   align-self: flex-start; 
 }
 
-@media (min-width: 768px) {
-  section.items .product {
-    width: 30%;
-  }
-}
-
 section.items .photo img {
   max-width: 140px;
+  border-radius: 1rem;
 }
 
 section.items .description {
@@ -149,3 +151,32 @@ section.summary table tbody tr:last-of-type th {
   padding: 10px 0;
 }
 
+
+@media (max-width: 431px) {
+  section.items .product {
+    width: 100%;
+  }
+}
+
+@media (min-width: 432px) {
+  $background-color: #F0E68C; /* Khaki */
+  $datail-color1: #2F4F4F;    /* Dark Slate Gray */
+  $datail-color2: #556B2F;    /* Dark Olive Green */
+  $text-color: #F5FFFA;       /* Mint Cream */
+  $detail-color: #FFD700;     /* Gold */
+  body{
+    background-color: $datail-color1;
+  }
+  
+  
+  section.items .product {
+    background-color: $detail-color;}
+  
+  .titulo h1 {
+    color: $text-color;}
+  main > section.items {  background-color:$background-color ;}
+
+  section.items .product {
+    width: 40%;
+  }
+}

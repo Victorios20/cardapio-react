@@ -1,39 +1,22 @@
-$background-color: #7D9FC9;
-$datail-color1:#173A57;
-$datail-color2: #1D5E40;
-$text-color: #fff;
-$detail-color:#FCFDE2;
-/* Remove o azul no botão ao ser clicado no celular */
-button {
-  -webkit-tap-highlight-color: transparent; /* Remove o highlight azul ao tocar */
+$background-color: #F5F5F5;  /* Light Gray */
+$datail-color1: #333333;     /* Charcoal Black */
+$datail-color2: #A9A9A9;     /* Dark Gray */
+$text-color: #000000;        /* Black */
+$detail-color: #FFFFFF;      /* White */
+
+@media (min-width: 432px) {
+  $background-color: #F0E68C; /* Khaki */
+  $datail-color1: #2F4F4F;    /* Dark Slate Gray */
+  $datail-color2: #556B2F;    /* Dark Olive Green */
+  $text-color: #F5FFFA;       /* Mint Cream */
+  $detail-color: #FFD700;     /* Gold */
+  .categorias button {
+    background-color:  #FFD700;     ; /* Cor de fundo dos botões */}
+    .categorias button.active {background-color:#2F4F4F ;}
+    
 }
 
-/* Customiza o estado de foco e ativo para os botões */
-button:focus,
-button:active {
-  outline: none; /* Remove a borda de foco padrão */
-  background-color: $datail-color2; /* Cor de fundo desejada ao apertar */
-  color: $text-color; /* Cor do texto desejada ao apertar */
-}
 
-/* Define as cores normais do botão */
-button {
-  background-color: $background-color; /* Cor de fundo normal do botão */
-  border: none; /* Remove borda, se necessário */
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color:$datail-color1; /* Cor ao passar o mouse */
-  color: $text-color; /* Cor do texto ao passar o mouse */
-}
-
-a:focus,
-a:active {
-  color: $text-color; /* Cor do texto ao apertar */
-}
 
 
 .categorias {
@@ -53,18 +36,19 @@ a:active {
 }
 
 .categorias button {
-  margin: 0 3px; /* Espaçamento entre os botões */
+  // background-color: $detail-color; /* Cor de fundo dos botões */
+   margin: 0 3px; /* Espaçamento entre os botões */
   padding: 10px 10px; /* Espaçamento interno dos botões */
   border: none;
   border-radius: 5px;
-  background-color: $detail-color; /* Cor de fundo dos botões */
+
   cursor: pointer; /* Mudança do cursor para pointer */
   transition: background-color 0.3s; /* Transição suave */
 }
 
 .categorias button.active {
-  background-color: #1D5E40; /* Cor de fundo do botão ativo */
-  color: #fff; /* Cor do texto do botão ativo */
+  //background-color: $datail-color2; /* Cor de fundo do botão ativo */
+  //color: #fff; /* Cor do texto do botão ativo */
 }
 
 
