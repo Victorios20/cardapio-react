@@ -16,6 +16,16 @@ $detail-color: #FFFFFF;      /* White */
     .categorias button.active {background-color:#2F4F4F ;}
     
 }
+@media (max-width: 431px) {
+  section.items .product {
+    width: 100%;
+  }
+  .categorias button.active {
+    background-color: $datail-color2; /* Cor de fundo do botão ativo */
+    color: #fff; /* Cor do texto do botão ativo */
+  }
+  
+}
 
 
 
@@ -38,7 +48,7 @@ $detail-color: #FFFFFF;      /* White */
 
 .categorias button {
    background-color: #fff; /* Cor de fundo dos botões */
-   color: #fff;
+   color: #000000;
   
    margin: 0 3px; /* Espaçamento entre os botões */
   padding: 10px 10px; /* Espaçamento interno dos botões */
@@ -50,17 +60,11 @@ $detail-color: #FFFFFF;      /* White */
   transition: background-color 0.3s; /* Transição suave */
 }
 
-// .categorias button.active {
-//   //background-color: $datail-color2; /* Cor de fundo do botão ativo */
-//   //color: #fff; /* Cor do texto do botão ativo */
-// }
-
 
 .categorias button:hover {
-  background-color: #007bff;
+  background-color: rgba(128, 128, 128, 0.5); /* Cinza com 50% de transparência */
   color: white;
 }
-
 
 .menu {
   display: flex;
