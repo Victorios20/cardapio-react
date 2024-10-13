@@ -42,7 +42,7 @@ $detail-color: #FFFFFF;      /* White */
   overflow-y: hidden; /* Impede a rolagem vertical */
   border: none; /* Remove qualquer borda */
   outline: none; /* Remove qualquer contorno de foco */
-  scrollbar-width: none; /* Remove o scroll do Firefox */
+    scrollbar-width: none; 
 }
 
 .categorias::-webkit-scrollbar {
