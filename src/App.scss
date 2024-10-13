@@ -169,11 +169,16 @@ section.items .product.selected {
 }
 
 @media (min-width: 432px) {
-  $background-color: #F0E68C; /* Khaki */
-  $datail-color1: #2F4F4F;    /* Dark Slate Gray */
-  $datail-color2: #556B2F;    /* Dark Olive Green */
-  $text-color: #F5FFFA;       /* Mint Cream */
-  $detail-color: #FFD700;     /* Gold */
+
+  $background-color: #F5F5F5;  /* Light Gray */
+  $datail-color1: #073e3b;     /* Charcoal Black */
+  $datail-color2: #A9A9A9;     /* Dark Gray */
+  $text-color: #000000;        /* Black */
+  $detail-color: #FFFFFF;      /* White */
+
+
+
+
   body{
     background-color: $datail-color1;
   }
@@ -183,7 +188,7 @@ section.items .product.selected {
     background-color: $detail-color;}
   
   .titulo h1 {
-    color: $text-color;}
+    color: #fff;}
   main > section.items {  background-color:$background-color ;}
 
   section.items .product {

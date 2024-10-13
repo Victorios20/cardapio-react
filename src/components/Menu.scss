@@ -13,7 +13,10 @@ $detail-color: #FFFFFF;      /* White */
   .categorias button {
     background-color:  #FFD700;
   }
-    .categorias button.active {background-color:#2F4F4F ;}
+    .categorias button.active {
+      background-color:#2F4F4F ;
+      color: #fff
+    }
     
 }
 @media (max-width: 431px) {
