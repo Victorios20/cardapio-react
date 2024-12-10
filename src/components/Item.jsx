@@ -5,9 +5,13 @@ import Alert from "@mui/material/Alert";
 function Item({ item, selectProduct, quantityProduct }) {
   const [snackbarOpen, setSnackbarOpen] = useState(false);
 
-  const handleSelectProduct = (id) => {
-    selectProduct(id);
-    setSnackbarOpen(true);
+  const handleSelectProduct = (id, Conditionalrendering) => {
+    selectProduct(id); // Atualiza o estado do item
+    if (!Conditionalrendering) {
+      setSnackbarOpen(true); // Exibe o Snackbar se a condição for verdadeira
+    } else {
+        setSnackbarOpen(false);
+    }
   };
 
   const handleCloseSnackbar = (event, reason) => {
@@ -20,7 +24,9 @@ function Item({ item, selectProduct, quantityProduct }) {
   return (
     <>
       <div
-        onClick={() => handleSelectProduct(item.id)}
+        onClick={() =>
+          handleSelectProduct(item.id, item.Conditionalrendering)
+        }
         className={`product ${item.Conditionalrendering ? "selected" : ""}`}
       >
         <div className="photo">
